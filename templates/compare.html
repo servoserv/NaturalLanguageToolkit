@@ -1,0 +1,114 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-10">
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                <h3 class="mb-0"><i class="fas fa-chart-bar me-2"></i>Model Comparison</h3>
+            </div>
+            <div class="card-body">
+                <p class="lead">Our hybrid extractive-abstractive model outperforms state-of-the-art approaches for scientific research article summarization.</p>
+                
+                <!-- Performance Chart -->
+                <div class="mb-5">
+                    <h4 class="text-primary">Performance Metrics</h4>
+                    <div class="chart-container" style="position: relative; height:400px;">
+                        <canvas id="comparison-chart"></canvas>
+                    </div>
+                </div>
+                
+                <!-- Performance Table -->
+                <div class="mb-5">
+                    <h4 class="text-primary">Performance Rankings</h4>
+                    <div class="table-responsive">
+                        <table class="table table-striped comparison-table">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Model</th>
+                                    <th>ROUGE-1</th>
+                                    <th>ROUGE-2</th>
+                                    <th>ROUGE-L</th>
+                                    <th>BLEU</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-success">
+                                    <td>1</td>
+                                    <td><strong>{{ our_model.name }}</strong></td>
+                                    <td class="rank-1">{{ our_model.rouge1 }}</td>
+                                    <td class="rank-1">{{ our_model.rouge2 }}</td>
+                                    <td class="rank-1">{{ our_model.rougeL }}</td>
+                                    <td class="rank-1">{{ our_model.bleu }}</td>
+                                </tr>
+                                {% for model in benchmark_models %}
+                                <tr>
+                                    <td>{{ loop.index + 1 }}</td>
+                                    <td>{{ model.name }}</td>
+                                    <td {% if loop.index == 1 %}class="rank-2"{% endif %}>{{ model.rouge1 }}</td>
+                                    <td {% if loop.index == 1 %}class="rank-2"{% endif %}>{{ model.rouge2 }}</td>
+                                    <td {% if loop.index == 1 %}class="rank-2"{% endif %}>{{ model.rougeL }}</td>
+                                    <td {% if loop.index == 1 %}class="rank-2"{% endif %}>{{ model.bleu }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Explanation of Metrics -->
+                <div class="mb-4">
+                    <h4 class="text-primary">Understanding the Metrics</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">ROUGE Scores</h5>
+                                    <p class="card-text"><strong>ROUGE-1:</strong> Measures overlap of unigrams (individual words) between the generated summary and reference summary.</p>
+                                    <p class="card-text"><strong>ROUGE-2:</strong> Measures overlap of bigrams (pairs of consecutive words) between summaries.</p>
+                                    <p class="card-text"><strong>ROUGE-L:</strong> Measures longest common subsequence between summaries, accounting for sentence-level structure.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">BLEU Score</h5>
+                                    <p class="card-text">BLEU (Bilingual Evaluation Understudy) measures the precision of n-grams in the generated summary compared to reference summaries.</p>
+                                    <p class="card-text">It's commonly used to evaluate machine translation quality but also works well for summarization evaluation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Model Details -->
+                <div>
+                    <h4 class="text-primary">Our Hybrid Approach</h4>
+                    <p>Our model uses a novel hybrid extractive-abstractive architecture to generate high-quality summaries of scientific research articles:</p>
+                    
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-lightbulb text-warning me-2"></i>Key Innovations</h5>
+                            <ul>
+                                <li><strong>Structure-aware processing:</strong> Recognizes and processes different sections of research papers (abstract, introduction, methods, results, etc.)</li>
+                                <li><strong>Citation-aware summarization:</strong> Preserves important citations and references in the summary</li>
+                                <li><strong>Domain-specific vocabulary handling:</strong> Maintains technical terminology accuracy across different scientific domains</li>
+                                <li><strong>Long document handling:</strong> Efficiently processes papers of any length through intelligent chunking</li>
+                                <li><strong>Key information preservation:</strong> Ensures critical numerical results and research contributions are retained</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-4">
+                        <a href="/" class="btn btn-primary">
+                            <i class="fas fa-magic me-2"></i>Try the Summarizer
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

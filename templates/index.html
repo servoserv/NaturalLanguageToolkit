@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center mb-4">
+        <div class="col-lg-10">
+            <div class="card card-scientific">
+                <div class="card-header bg-dark">
+                    <h1 class="h3 mb-0">Research Article Summarization</h1>
+                </div>
+                <div class="card-body">
+                    <p class="lead">
+                        Generate concise, accurate summaries of scientific research articles using our advanced hybrid extractive-abstractive model.
+                    </p>
+                    <div class="highlight-section mb-4">
+                        <p>
+                            Our system is designed specifically for scientific literature, handling domain-specific terminology and maintaining the key findings and contributions of the original research.
+                        </p>
+                    </div>
+                    
+                    <form id="summarize_form" action="{{ url_for('summarize') }}" method="post">
+                        <div class="mb-4">
+                            <label for="file_option" class="form-label">Choose Input Source</label>
+                            <select class="form-select" id="file_option" name="file_option">
+                                <option value="custom" selected>Custom Text Input</option>
+                                <option value="sample1">Sample: Transformer-based Models for Long Document Summarization</option>
+                                <option value="sample2">Sample: Domain-Specific Pre-training for Scientific Text Summarization</option>
+                                <option value="sample3">Sample: Citation-Aware Scientific Document Summarization</option>
+                            </select>
+                            <div id="file_option_info" class="form-text text-info mt-1"></div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="text_input" class="form-label">Input Text</label>
+                            <textarea class="form-control" id="text_input" name="text_input" rows="10" placeholder="Paste or type your scientific article text here..."></textarea>
+                            <div class="form-text">
+                                For best results, include the full text of the research article or at least the abstract, introduction, and conclusion sections.
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <label for="model_type" class="form-label">Summarization Approach</label>
+                                <select class="form-select" id="model_type" name="model_type">
+                                    <option value="hybrid" selected>Hybrid (Recommended)</option>
+                                    <option value="extractive">Extractive Only</option>
+                                    <option value="abstractive">Abstractive Only</option>
+                                </select>
+                                <div id="model_info" class="form-text mt-1"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="max_length" class="form-label">Summary Length (words): <span id="length_value">250</span></label>
+                                <input type="range" class="form-range custom-range" id="max_length" name="max_length" min="100" max="500" step="50" value="250">
+                                <div class="form-text">
+                                    Adjust the length of the generated summary.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-info btn-lg">
+                                <i class="fas fa-magic me-2"></i>Generate Summary
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="card mt-4">
+                <div class="card-header bg-dark">
+                    <h2 class="h4 mb-0">How It Works</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="p-3 border rounded bg-dark">
+                                <h3 class="h5"><i class="fas fa-file-alt text-info me-2"></i>1. Document Analysis</h3>
+                                <p class="small">Our system analyzes the document structure, identifies key sections, and performs scientific entity recognition.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="p-3 border rounded bg-dark">
+                                <h3 class="h5"><i class="fas fa-project-diagram text-info me-2"></i>2. Hybrid Processing</h3>
+                                <p class="small">Extracts important content and then generates a fluent, coherent summary using advanced NLP techniques.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="p-3 border rounded bg-dark">
+                                <h3 class="h5"><i class="fas fa-check-square text-info me-2"></i>3. Quality Assurance</h3>
+                                <p class="small">Ensures scientific accuracy, preserves key information, and maintains the original paper's contributions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
