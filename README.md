@@ -1,4 +1,4 @@
-# do template hai dhyan se poora pdhna j samajh me aaye wo rkhenge
+
 # Research Article Summarization System
 
 ## Project Overview
