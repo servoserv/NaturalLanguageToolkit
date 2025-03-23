@@ -51,7 +51,6 @@ For detailed technical information, refer to:
 - `utils/` - Helper utilities
 - `app.py` - Main application file
 
-# ye do templates hai jo rkha hai woh rkh lo dekh ke you decide among urselves ek upar wala ek neeche wala
 
 <div align="center">
   <h1>🔬 Scientific Article Summarization System</h1>
