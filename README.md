@@ -6,9 +6,10 @@
   <video width="500px" height="400px" controls>
         <source src="https://youtu.be/vXuwmJlZunA" type="video/mp4">
     </video>
+![image]()
 
 </div>
-
+[![Video Title](https://github.com/user-attachments/assets/374d6de9-9e27-4c73-a82e-df6abec9bd54)](https://www.youtube.com/watch?v=vXuwmJlZunA)
 
 
 ## Project Overview
