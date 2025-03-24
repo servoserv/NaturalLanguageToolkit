@@ -130,7 +130,8 @@ Our system achieves state-of-the-art performance on scientific article summariza
 - 0.391 BLEU Score
 
 <div align="center">
-  <em>NOTE : we have deployed the working model in  </em>
+  <em>NOTE : We have deployed the working model in here : <a href="https://www.youtube.com/watch?v=vXuwmJlZunA" target="_blank">Vercel App</a> 
+ and the model is present in ps_2 directory as file name subhadeepofficial.16_brain_dead_2k25.ipynb .</em>
 </div>
 
 <div align="center">
