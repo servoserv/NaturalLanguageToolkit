@@ -13,15 +13,24 @@
 </div>
   <div>
   Subhadeep Dey(Team Leader)
-    Gsuite id: 2023ETB011.subhadeep@students.iiests.ac.in
+    
+</div>
+<div>
+  Gsuite id: 2023ETB011.subhadeep@students.iiests.ac.in
 </div>
   <div>
   Shounak Das
-    Gsuite id: 2023ETB042.shounak@students.iiests.ac.in
+    
+</div>
+<div>
+  Gsuite id: 2023ETB042.shounak@students.iiests.ac.in
 </div>
   <div>
   Archit Narayan 
-    Gsuite id: 2023ETB067.archit@students.iiests.ac.in
+    
+</div>
+<div>
+  Gsuite id: 2023ETB067.archit@students.iiests.ac.in
 </div>
 </div>
 
