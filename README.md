@@ -3,8 +3,12 @@
   <h1>🔬 Research Article Summarization System</h1>
   <p><em>Advanced Research Paper Summarization using Hybrid NLP Techniques</em></p>
   <img src="generated-icon.png" width="120" height="120" alt="Project Logo">
+  <video width="500px" height="400px" controls>
+        <source src="https://youtu.be/vXuwmJlZunA" type="video/mp4">
+    </video>
+
 </div>
-![image](https://github.com/user-attachments/assets/081da928-0420-4425-8863-45e08c818fca)
+
 
 
 ## Project Overview
