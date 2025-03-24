@@ -1,15 +1,14 @@
 
-# Research Article Summarization System
+<div align="center">
+  <h1>🔬 Research Article Summarization System</h1>
+  <p><em>Advanced Research Paper Summarization using Hybrid NLP Techniques</em></p>
+  <img src="generated-icon.png" width="120" height="120" alt="Project Logo">
+</div>
 
 ## Project Overview
 A hybrid extractive-abstractive text summarization system for scientific papers, implementing advanced NLP techniques and delivering high-quality summaries.
 
-## Key Features
-- 🔍 Hybrid summarization approach
-- 📊 Multiple summarization models
-- 🎯 Scientific paper-specific processing
-- 💻 User-friendly web interface
-- 📈 Performance evaluation metrics
+
 
 ## Technical Implementation
 ### Architecture
@@ -23,13 +22,7 @@ A hybrid extractive-abstractive text summarization system for scientific papers,
 - Evaluation System
 - Web Interface
 
-## Performance Metrics
-| Metric    | Score |
-|-----------|-------|
-| ROUGE-1   | 45.1  |
-| ROUGE-2   | 21.8  |
-| ROUGE-L   | 42.3  |
-| BLEU      | 36.2  |
+
 
 ## Results and Analysis
 The system demonstrates superior performance in:
@@ -52,14 +45,11 @@ For detailed technical information, refer to:
 - `app.py` - Main application file
 
 
-<div align="center">
-  <h1>🔬 Scientific Article Summarization System</h1>
-  <p><em>Advanced Research Paper Summarization using Hybrid NLP Techniques</em></p>
+
   
-  [![Run on Repl.it](https://replit.com/badge/github/username/repo)](https://replit.com/@username/repo)
   
-  <img src="generated-icon.png" width="120" height="120" alt="Project Logo">
-</div>
+  
+  
 
 ## 🚀 Features
 
