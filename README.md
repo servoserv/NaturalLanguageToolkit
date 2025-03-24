@@ -9,7 +9,17 @@
 
 <div>
   <div>
+  <a href="https://youtu.be/GDI3K-Ft77M" target="_blank">Watch this video on YouTube working demo of our web application for the problem statement-2</a>
+</div>
+  <div>
+    <div align="center">
+  <p><em>NOTE : We have deployed an alternative working model (just for our web application) for the problem statement-2 in here : <a href="https://www.youtube.com/watch?v=vXuwmJlZunA" target="_blank">Vercel App</a> 
+ whose web application directory is ps2 and  whereas the main working model required is present as file name subhadeepofficial.16_brain_dead_2k25.ipynb outside the ps2 directory. This Readme file and technical_report are the description of our web application model.</em></p>
+</div>
   Team Name : subhadeepofficial.16
+</div>
+  </div>
+  College Name : IIEST Shibpur
 </div>
   <div>
   Subhadeep Dey(Team Leader)
@@ -34,9 +44,7 @@
 </div>
 </div>
 
-<div>
-  <a href="https://www.youtube.com/watch?v=vXuwmJlZunA" target="_blank">Watch this video on YouTube</a>
-</div>
+
 
 
 
@@ -155,10 +163,7 @@ Our system achieves state-of-the-art performance on scientific article summariza
 - 44.1% ROUGE-L Score
 - 0.391 BLEU Score
 
-<div align="center">
-  <em>NOTE : We have deployed the working model in here : <a href="https://www.youtube.com/watch?v=vXuwmJlZunA" target="_blank">Vercel App</a> 
- whose web application directory is ps2 and the model is present as file name subhadeepofficial.16_brain_dead_2k25.ipynb outside the ps2 directory .</em>
-</div>
+
 
 <div align="center">
   <em>Developed with ❤️ for the research community</em>
