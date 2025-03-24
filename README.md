@@ -130,7 +130,7 @@ Our system achieves state-of-the-art performance on scientific article summariza
 - 0.391 BLEU Score
 
 <div align="center">
-  <em>Note : </em>
+  <em>NOTE : we have deployed the working model in  </em>
 </div>
 
 <div align="center">
