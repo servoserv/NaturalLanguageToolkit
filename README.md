@@ -4,6 +4,8 @@
   <p><em>Advanced Research Paper Summarization using Hybrid NLP Techniques</em></p>
   <img src="generated-icon.png" width="120" height="120" alt="Project Logo">
 </div>
+![image](https://github.com/user-attachments/assets/081da928-0420-4425-8863-45e08c818fca)
+
 
 ## Project Overview
 A hybrid extractive-abstractive text summarization system for scientific papers, implementing advanced NLP techniques and delivering high-quality summaries.
