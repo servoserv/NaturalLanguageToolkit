@@ -1,5 +1,5 @@
 
-<div align="center">
+<div align="left">
   <h1>🔬 Research Article Summarization System</h1>
   <p><em>Advanced Research Paper Summarization using Hybrid NLP Techniques</em></p>
   <img src="generated-icon.png" width="120" height="120" alt="Project Logo">
