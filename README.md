@@ -7,6 +7,23 @@
         <source src="https://youtu.be/vXuwmJlZunA" type="video/mp4">
     </video>
 
+<div>
+  <div>
+  Team Name : subhadeepofficial.16
+</div>
+  <div>
+  Subhadeep Dey(Team Leader)
+    Gsuite id: 2023ETB011.subhadeep@students.iiests.ac.in
+</div>
+  <div>
+  Shounak Das
+    Gsuite id: 2023ETB042.shounak@students.iiests.ac.in
+</div>
+  <div>
+  Archit Narayan 
+    Gsuite id: 2023ETB067.archit@students.iiests.ac.in
+</div>
+</div>
 
 <div>
   <a href="https://www.youtube.com/watch?v=vXuwmJlZunA" target="_blank">Watch this video on YouTube</a>
@@ -131,7 +148,7 @@ Our system achieves state-of-the-art performance on scientific article summariza
 
 <div align="center">
   <em>NOTE : We have deployed the working model in here : <a href="https://www.youtube.com/watch?v=vXuwmJlZunA" target="_blank">Vercel App</a> 
- and the model is present in ps_2 directory as file name subhadeepofficial.16_brain_dead_2k25.ipynb .</em>
+ whose web application directory is ps2 and the model is present as file name subhadeepofficial.16_brain_dead_2k25.ipynb outside the ps2 directory .</em>
 </div>
 
 <div align="center">
